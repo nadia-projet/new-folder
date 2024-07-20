@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>  
+	  <title>Pierres Précieuses</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="javascript.js" defer></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+      
+    <!--header-->
+     <header class="main-header">
+
+      <div class="section__inner section__flex">
+        <h1>
+          <a href="index.html">
+            <img class="logo" src="img/logo.png" alt="Pierres Précieuses et Semi-Précieuses">
+          </a>
+        </h1>
+
+        <button type="button" class="hamburger">
+          <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+          </span>
+        </button>
+
+        <nav class="main-nav">
+          <ul class="main-menu">
+            <li><a href="index.html">Histoire</a></li>
+            <li><a href="pierres-precieuses.html">Pierres précieuses</a></li>
+            <li><a href="semi-precieuses.html">Pierres Semi-Précieuses</a></li>
+            <li class="is-current">Contactez-nous</li>
+          </ul>
+        </nav>
+      </div>
+
+     </header>
+     <!--header-->
+
+     <!-- main-->
+
+     <section class="main-content main-content-form">
+     <section class="promoted-full-primary">
+      <picture class="promoted-full-primary--bg"><source media="(max-width: 768px)" srcset="img/image-form.jpg" type="image/webp">
+        <source media="(max-width: 768px)" srcset="img/test.jpg">
+        <source media="(min-width: 769px) and (max-width: 991px)" srcset="img/image-form.jpg" type="image/webp">
+        <source media="(min-width: 769px) and (max-width: 991px)" srcset="img/image-form.jpg" type="image/webp">
+        <source media="(min-width: 992px) and (max-width: 1199px)" srcset="img/image-form.jpg" type="image/webp">
+        <source media="(min-width: 992px) and (max-width: 1199px)" srcset="img/image-form.jpg" type="image/webp">
+        <source media="(min-width: 1200px)" ssrcset="img/image-form.jpg" type="image/webp">
+        <source media="(min-width: 1200px)" srcset="img/image-form.jpg" type="image/webp">
+        <img loading="lazy" alt="" src="img/image-form.jpg">
+      </picture>
+      <div class="promoted-full-primary--wrapper container">
+        
+        <section>
+
+          <h2>Contactez-nous</h2>
+          <p class="center">Pour tout renseignement sur d'autres pierres semi-précieuses, ainsi que pour tout achat ou vente, veuillez nous contacter.</p>
+          
+        </section>
+
+        <form class="contact-form" name="contactForm" onsubmit="return validateForm(event)">
+
+          <span class="required-label">* Champs obligatoires</span>
+
+          <section class="section-grid-form">
+
+            <div class="firstname-class">
+
+              <label for="firstname">Prénom <span>*</span></label>
+              <input type="text" id="firstname" name="firstname">
+
+            </div>
+
+            <div class="secondname-class">
+
+              <label for="secondname">Nom <span>*</span></label>
+              <input type="text" id="secondname" name="secondname">
+              
+            </div>
+
+            <div class="email-class">
+
+              <label for="mail">Adresse e-mail <span>*</span></label>
+              <input type="email" id="mail">
+
+            </div>
+
+
+            <div class="message-class">
+
+              <label for="message">Votre message <span>*</span></label>
+              <textarea placeholder="Vous pouvez entrer votre message ici." name="message" rows="4" cols="50"></textarea>
+
+            </div>
+  
+            <div class="position-grid-button">
+
+              <button type="submit">Envoyer</button>
+
+            </div>
+  
+            </section>
+
+            <div id="submit-message"></div>
+  
+      </form>
+      </div>
+     </section>
+
+     </section>
+
+     <!-- main-->
+
+     <!--footer-->
+     <footer class="main-footer">
+        <div class="section__inner">
+          <p>© PPSP 2024. tous droits réservés.</p>
+        </div>
+     </footer>
+     <!--footer-->
+    
+  </body>
+
+  
+</html>
